@@ -17,3 +17,7 @@
     popwin
     ruby-end
     ))
+
+(defun ruby/post-init-popwin ()
+  (push '("*alchemist test report*" :dedicated t :position bottom :stick t :noselect t :height 0.4)
+        popwin:special-display-config))
